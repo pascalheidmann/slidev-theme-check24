@@ -12,13 +12,13 @@ h1 {
     position: relative;
     isolation: isolate;
 
-    &::before {
+    &::after {
         content: '';
         position: absolute;
         bottom: -.2rem;
         left: 0;
         height: .25rem;
-        width: 20rem;
+        width: min(10rem, 100%);
         background-color: #ffbb1c;
         border-radius: 1rem;
         z-index: -1;
