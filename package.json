@@ -18,12 +18,12 @@
 	"dependencies": {
 		"@slidev/types": "^0.40.3",
 		"codemirror-theme-vars": "^0.1.1",
+		"less": "^4.1.3",
 		"prism-theme-vars": "^0.2.4",
 		"theme-vitesse": "^0.6.2"
 	},
 	"devDependencies": {
-		"@slidev/cli": "^0.40.3",
-		"less": "^4.1.3"
+		"@slidev/cli": "^0.40.3"
 	},
 	"//": "Learn more: https://sli.dev/themes/write-a-theme.html",
 	"slidev": {
