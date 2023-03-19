@@ -1,0 +1,62 @@
+:root {
+    // default theme color
+    // can be overrided by uses `themeConfig` option
+    --slidev-theme-primary: #063773;
+}
+
+h1, h2, h3 {
+    color: var(--slidev-theme-primary);
+}
+
+h1 {
+    position: relative;
+    isolation: isolate;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -.2rem;
+        left: 0;
+        height: .25rem;
+        width: 20rem;
+        background-color: #ffbb1c;
+        border-radius: 1rem;
+        z-index: -1;
+    }
+}
+
+.slidev-layout.cover,
+.slidev-layout.intro {
+@apply h-full grid;
+
+    background: url(c24-slide-background.png) center center;
+    background-size: cover;
+
+    h1 {
+    @apply text-6xl leading-20;
+    }
+
+    h1 + p {
+    @apply -mt-2 opacity-50 mb-4;
+        color: var(--slidev-theme-primary);
+    }
+
+    p + h2, ul + h2, table + h2 {
+    @apply mt-10;
+    }
+}
+
+.slidev-layout {
+    &:not(.cover):not(.intro) {
+        &::after {
+            content: '';
+            background: url(check24-logo.png) center;
+            background-size: contain;
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            width: 5rem;
+            aspect-ratio: 381 / 110;
+        }
+    }
+}

@@ -1,7 +1,9 @@
 ---
 theme: ./
----
 
+layout: cover
+
+---
 # Slidev Theme Starter
 
 Presentation slides for developers
