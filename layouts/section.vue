@@ -1,11 +1,8 @@
 <template>
   <div>
-    <div class="slidev-layout intro">
-      <div class="my-auto">
-        <slot/>
-      </div>
+    <div class="slidev-layout section">
+      <slot/>
     </div>
-
     <div class="slidev-current-slide-overlay">
       <span>
         <SlideCurrentNo/> / <SlidesTotal/>
