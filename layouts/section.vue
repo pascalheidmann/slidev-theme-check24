@@ -1,16 +1,11 @@
 <script setup>
-import SlideCurrentNo from "@slidev/client/builtin/SlideCurrentNo.vue";
-import SlidesTotal from "@slidev/client/builtin/SlidesTotal.vue";
+import SlidevFooter from "../components/footer.vue";
 </script>
 <template>
-  <div>
+  <div class="h-full w-fulls">
     <div class="slidev-layout section">
       <slot/>
     </div>
-    <div class="slidev-current-slide-overlay">
-      <span>
-        <SlideCurrentNo/> / <SlidesTotal/>
-      </span>
-    </div>
+    <slidev-footer></slidev-footer>
   </div>
 </template>
