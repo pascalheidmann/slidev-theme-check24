@@ -74,6 +74,15 @@ function updateUser(id: number, update: Partial<User>) {
 ```
 
 ---
+layout: two-cols
+---
+left
+
+::right::
+
+right
+
+---
 layout: center
 class: "text-center"
 ---
